@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="assets/bootstrap5/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-d4H9/NSPWtKVjlSlJzi6e8mzFEv2C3HpAdszKZ9oVdb3w7VNUSucxN4bWUGJGxEz27EfKDEfUnKFC5nx9cc2JQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.css">
+   
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="row form-row">
+                <div class="col d-none d-md-block"></div>
+                <div class="col form-container active" id="sign-up">
+                    
+                    <form action="assets/php/signip.php" novalidate>
+                        <h1>Sign Up</h1>
+                        <div class="form-floating mb-3">                           
+                            <input type="text" class="form-control"  name="First Name" id="floatingInput" placeholder="First Name" required>
+                            <label for="floatingInput">First Name</label>
+                        </div>
+                        <div class="form-floating mb-3">                           
+                            <input type="text" class="form-control"  name="Surname" id="floatingInput2" placeholder="Surname">
+                            <label for="floatingInput2">Surname</label>
+                        </div>
+                        <div class="input-group mb-3 ">
+                            <span class="input-group-text" id="iputgrout1">@</span>
+                            <div class="form-floating">   
+                            <input type="email" class="form-control" aria-describedby="inputgroup1" id="floatingInput3" placeholder="email" name="email">
+                            <label for="floatingInput3">Email</label>
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="floatingInput4" placeholder="password">
+                            <label for="floatingInput4">Password</label>
+                        </div>
+                        <div class="form-floating mb-3">                           
+                            <input type="text" class="form-control"  name="code" id="floatingInput2" placeholder="Referral Code" disabled>
+                            <label for="floatingInput2">Referral Code</label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input type="checkbox" id="checkboxInput1" value="" class="form-check-input">
+                            <label for="checkboxInput1" class="form-check-label">Terms & Conditions</label>
+                        </div>
+                        Already have an account <a href="#" id="switch-to-login">Log in</a> <button class="btn btn-secondary mt-3" type="submit">Sign Up</button>
+
+                    </form>
+                </div>
+                <div class="col form-container  " id="log-in">
+                    <form action="assets/php/login.php" novalidate class="login">
+                        <h1>log In</h1>
+                        
+                        <div class="input-group mb-3 ">
+                            <span class="input-group-text" id="iputgrout1">@</span>
+                            <div class="form-floating">   
+                            <input type="email" class="form-control" aria-describedby="inputgroup1" id="floatingInput3" placeholder="email" name="email">
+                            <label for="floatingInput3">Email</label>
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="floatingInput4" placeholder="password">
+                            <label for="floatingInput4">Password</label>
+                        </div>
+                       
+                        <div class="form-check mb-3">
+                            <input type="checkbox" id="checkboxInput1" value="" class="form-checked-input" checked>
+                            <label for="checkboxInput1" class="form-check-label">Terms & Conditions</label>
+                        </div>
+                        Don't have an account <a href="#" id="switch-to-signup">Sign Up</a> 
+                        <button class="btn btn-secondary mt-3" type="submit">log in</button>
+
+                    </form>
+                </div>
+                <div class="col d-none d-md-block"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--javascript-->
+    <script src="assets/js/main.js"></script>
+    <link rel="stylesheet" href="assets/bootstrap5/js/bootstrap.bundle.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+</body>
+</html>
