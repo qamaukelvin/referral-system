@@ -27,6 +27,9 @@ input[type="checkbox"]:focus{
     box-shadow: none;
     border-color: cadetblue;
 }
+input[type="password"]{
+    cursor: none;
+}
 .form-row{
     position: relative;
 }
@@ -49,4 +52,12 @@ input[type="checkbox"]:focus{
   }
 #log-in .login{
     margin-top: 80px;
+}
+
+/* Home Styling */
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
